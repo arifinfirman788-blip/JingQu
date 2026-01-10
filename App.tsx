@@ -79,7 +79,7 @@ const TOP_PROMO_CARDS = [
     id: 'p1',
     title: '屯堡文脉',
     subtitle: '探秘大明遗风活化石',
-    image: '/assets/promo-1.png',
+    image: './assets/promo-1.png',
     tags: ['非遗', '地戏', '石屋', '祈福'],
     color: 'from-emerald-600/80 to-emerald-900/90'
   },
@@ -87,7 +87,7 @@ const TOP_PROMO_CARDS = [
     id: 'p2',
     title: '景区导览',
     subtitle: '智慧导览，随身讲解',
-    image: '/assets/promo-2.png',
+    image: './assets/promo-2.png',
     tags: ['AR导览', '实时定位'],
     color: 'from-blue-400/80 to-blue-600/90'
   }
