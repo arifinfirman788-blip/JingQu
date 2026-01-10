@@ -14,7 +14,7 @@ import DiscoveryView from './components/DiscoveryView';
 import ComplaintView from './components/ComplaintView';
 import ServicesView from './components/ServicesView';
 
-// --- 常量与模拟数据 ---
+// --- 常量与模拟数据 (Update for JingQu) ---
 const WEATHER_DATA = { temp: 19, desc: '晴', date: '周三 12/10' };
 
 // 必看攻略数据
