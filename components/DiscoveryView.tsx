@@ -75,7 +75,7 @@ const DiscoveryView: React.FC<DiscoveryViewProps> = ({ onBack, onSelectAction })
                    {/* 榜单头部装饰 */}
                    <div className="bg-gradient-to-r from-rose-50 via-rose-100/50 to-orange-50 rounded-[2rem] p-6 relative overflow-hidden border border-rose-100/50">
                      <div className="relative z-10">
-                       <h2 className="text-3xl font-black text-gray-800">黄小西<span className="text-orange-500">精选榜</span></h2>
+                       <h2 className="text-3xl font-black text-gray-800">屯堡<span className="text-orange-500">精选榜</span></h2>
                        <div className="flex gap-4 mt-3">
                          {['精选路线', '好评榜', '好玩榜'].map(t => (
                            <div key={t} className="flex items-center gap-1 text-[10px] font-black text-rose-500/80">
