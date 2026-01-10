@@ -1,6 +1,15 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const getAI = () => {
+  const apiKey = process.env.API_KEY || process.env.GEMINI_API_KEY;
+  if (!apiKey) {
+    console.warn("API Key is missing. AI features will be disabled.");
+    return null;
+  }
+  return new GoogleGenAI({ apiKey });
+};
+
+const aiInstance = getAI();
 
 const SYSTEM_INSTRUCTION_MAIN = `你是"云峰屯堡"景区的官方AI伴游助手。
 你的语气热情、知识渊博且乐于助人。
@@ -22,12 +31,15 @@ export const sendMessageToGemini = async (
   history: {role: string, parts: {text: string}[]}[],
   mode: 'main' | 'nearby' = 'main'
 ): Promise<string> => {
+  if (!aiInstance) {
+    return "AI 伴游功能当前未配置 API Key，请联系管理员。";
+  }
   try {
     const modelId = 'gemini-3-flash-preview';
     
     const instruction = mode === 'nearby' ? SYSTEM_INSTRUCTION_NEARBY : SYSTEM_INSTRUCTION_MAIN;
 
-    const chat = ai.chats.create({
+    const chat = aiInstance.chats.create({
       model: modelId,
       config: {
         systemInstruction: instruction,
