@@ -1,4 +1,8 @@
 
+/**
+ * JingQu Project - Tunpu Tourism AI Assistant
+ * Last Updated: 2026-01-10
+ */
 import { useState, useRef, useEffect } from 'react';
 import { 
   Menu, Compass, Map, ShoppingBag, 
