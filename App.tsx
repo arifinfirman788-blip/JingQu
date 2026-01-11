@@ -83,7 +83,7 @@ const TOP_PROMO_CARDS = [
     id: 'p1',
     title: '屯堡文脉',
     subtitle: '探秘大明遗风活化石',
-    image: 'https://images.unsplash.com/photo-1599580145924-893019d3632e?w=800&auto=format&fit=crop',
+    image: 'assets/tunpu-culture.png',
     tags: ['非遗', '地戏', '石屋', '祈福'],
     color: 'from-emerald-600/80 to-emerald-900/90'
   },
@@ -91,7 +91,7 @@ const TOP_PROMO_CARDS = [
     id: 'p2',
     title: '景区导览',
     subtitle: '智慧导览，随身讲解',
-    image: 'https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?w=800&auto=format&fit=crop',
+    image: 'assets/scenic-guide.png',
     tags: ['AR导览', '实时定位'],
     color: 'from-blue-400/80 to-blue-600/90'
   }
